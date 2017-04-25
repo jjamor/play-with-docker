@@ -1,5 +1,14 @@
 version: '2'
 services:
+    bind:
+        container_name: bind
+        image: jjamor/bind
+        ports:
+            - "53:53"
+            - "53:53/udp"
+        volumes:
+            - ./bind/etc:/etc/bind
+            - ./bind/logs:/var/log/named
     haproxy:
         container_name: proxy
         image: haproxy

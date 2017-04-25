@@ -1,0 +1,11 @@
+$ttl 38400
+dockerlab.net.	IN	SOA	3c212047da8a. jjamornospam.gmail.com. (
+			1493045094
+			10800
+			3600
+			604800
+			38400 )
+@	IN	NS	ns.dockerlab.net.
+ns.dockerlab.net.	IN	A	192.168.9.10
+@	IN	A	192.168.9.10
+*	IN	A	192.168.9.10
